@@ -1,0 +1,64 @@
+.button {
+  width: 100%;
+  padding-top: calc(100% - 20px);
+  border: 10px solid black;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* Green */
+.button.green {
+  background-color: #0fa80f;
+  border-radius: 100% 0px 0px 0px;
+}
+.button.green:active {
+  transform: translate(1%, 1%);
+  background-color: #0b720b;
+}
+.button.green.active {
+  background-color: #0b720b;
+}
+
+/* Red */
+.button.red {
+  background-color: rgb(255, 0, 0);
+  border-radius: 0px 100% 0px 0px;
+}
+.button.red:active {
+  transform: translate(-1%, 1%);
+  background-color: rgb(182, 0, 0);
+}
+.button.red.active {
+  background-color: rgb(182, 0, 0);
+}
+
+/* Yellow */
+.button.yellow {
+  background-color: yellow;
+  border-radius: 0px 0px 0px 100%;
+}
+.button.yellow:active {
+  transform: translate(1%, -1%);
+  background-color: rgb(201, 201, 0);
+}
+.button.yellow.active {
+  background-color: rgb(201, 201, 0);
+}
+
+/* Blue */
+.button.blue {
+  background-color: blue;
+  border-radius: 0px 0px 100% 0px;
+}
+.button.blue:active {
+  transform: translate(-1%, -1%);
+  background-color: rgb(0, 0, 179);
+}
+.button.blue.active {
+  background-color: rgb(0, 0, 179);
+}

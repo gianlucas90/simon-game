@@ -1,0 +1,13 @@
+.pad {
+  /* background-color: orange; */
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .pad {
+    width: 90%;
+  }
+}

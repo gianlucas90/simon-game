@@ -1,0 +1,54 @@
+.btnSettings {
+  position: relative;
+  /* width: 100%; */
+}
+
+.game-btn {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em gray;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .game-btn {
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+}
+.game-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.2em;
+}
+
+.game-btn:focus {
+  outline: none;
+}
+
+.btnSettings .strict {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 3px solid black;
+  background-color: rgb(109, 109, 109);
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btnSettings .strict.active {
+  background-color: rgb(255, 60, 0);
+}
